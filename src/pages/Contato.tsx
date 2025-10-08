@@ -112,7 +112,7 @@ const Contato = () => {
 
               <Card className="border-none gradient-hero text-white">
                 <CardContent className="p-8">
-                  <h3 className="mb-4">Por que nos escolher?</h3>
+                  <h3 className="mb-4 text-white">Por que nos escolher?</h3>
                   <ul className="space-y-3">
                     {[
                       "Experiência consolidada no mercado internacional",

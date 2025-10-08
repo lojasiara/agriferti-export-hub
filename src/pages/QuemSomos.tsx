@@ -43,7 +43,7 @@ const QuemSomos = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="mb-6 animate-fade-in">Quem Somos</h1>
+          <h1 className="mb-6 animate-fade-in text-white">Quem Somos</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto animate-fade-in">
             Conectando Mercados, Gerando Resultados
           </p>
@@ -169,7 +169,7 @@ const QuemSomos = () => {
             </div>
 
             <div className="gradient-hero p-8 rounded-2xl text-white text-center">
-              <h3 className="mb-4">Nosso Compromisso</h3>
+              <h3 className="mb-4 text-white">Nosso Compromisso</h3>
               <p className="text-lg opacity-90">
                 Entregar qualidade, previsibilidade e parcerias duradouras,
                 fortalecendo toda a cadeia produtiva agrícola.

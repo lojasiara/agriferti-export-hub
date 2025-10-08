@@ -237,7 +237,7 @@ const Produtos = () => {
                 </div>
 
                 <div className="mt-12 gradient-hero p-8 rounded-2xl text-white text-center">
-                  <h3 className="mb-4">Nosso Compromisso</h3>
+                  <h3 className="mb-4 text-white">Nosso Compromisso</h3>
                   <p className="text-lg opacity-90">
                     Entregar qualidade, previsibilidade e parcerias duradouras,
                     fortalecendo toda a cadeia produtiva agrícola.

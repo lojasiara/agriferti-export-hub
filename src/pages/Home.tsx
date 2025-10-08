@@ -66,7 +66,7 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="mb-6 animate-fade-in font-bold">
+          <h1 className="mb-6 animate-fade-in font-bold text-white">
             Conectando o Agronegócio Brasileiro ao Mundo
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in opacity-90">
@@ -218,7 +218,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 gradient-hero">
         <div className="container mx-auto px-4 text-center text-white">
-          <h2 className="mb-6">Pronto para Expandir Seus Negócios?</h2>
+          <h2 className="mb-6 text-white">Pronto para Expandir Seus Negócios?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Entre em contato com nossa equipe e descubra como podemos
             transformar sua produção em oportunidades globais
