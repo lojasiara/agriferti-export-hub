@@ -94,7 +94,10 @@ const Home = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-muted/30 relative">
+        {/* Decorative divider top */}
+        <div className="absolute top-0 left-0 right-0 h-1 gradient-primary"></div>
+        
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="mb-4 text-primary">Por que escolher a AgriFerti?</h2>
@@ -124,7 +127,10 @@ const Home = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20">
+      <section className="py-20 relative">
+        {/* Decorative divider */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 gradient-secondary rounded-full"></div>
+        
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="mb-4">Produtos em Destaque</h2>
@@ -171,7 +177,11 @@ const Home = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-muted/30 relative">
+        {/* Decorative corner elements */}
+        <div className="absolute top-0 left-0 w-20 h-20 gradient-primary opacity-20 rounded-br-full"></div>
+        <div className="absolute top-0 right-0 w-20 h-20 gradient-secondary opacity-20 rounded-bl-full"></div>
+        
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -216,8 +226,12 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-hero">
-        <div className="container mx-auto px-4 text-center text-white">
+      <section className="py-20 gradient-hero relative overflow-hidden">
+        {/* Decorative circles */}
+        <div className="absolute -top-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+        <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-white/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-4 text-center text-white relative z-10">
           <h2 className="mb-6 text-white">Pronto para Expandir Seus Negócios?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Entre em contato com nossa equipe e descubra como podemos
