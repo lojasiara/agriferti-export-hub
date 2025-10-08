@@ -56,7 +56,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link to="/contato">
-              <Button className="gradient-primary text-primary hover:opacity-90">
+              <Button className="gradient-primary text-white hover:opacity-90">
                 Fale Conosco
               </Button>
             </Link>
@@ -93,7 +93,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link to="/contato" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button className="gradient-primary text-primary w-full mt-2">
+              <Button className="gradient-primary text-white w-full mt-2">
                 Fale Conosco
               </Button>
             </Link>
