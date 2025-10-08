@@ -114,10 +114,18 @@ const Produtos = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-muted/30 to-background">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6">Nossos Produtos</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={sojaImage}
+            alt="Produtos AgriFerti"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 gradient-hero opacity-90" />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="mb-6 text-white">Nossos Produtos</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Conectamos o Brasil aos principais mercados globais com uma ampla
             linha de commodities agrícolas e fertilizantes
           </p>

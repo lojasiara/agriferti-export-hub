@@ -46,10 +46,18 @@ const Contato = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-muted/30 to-background">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mb-6">Fale Conosco</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80"
+            alt="Contato AgriFerti"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 gradient-hero opacity-90" />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="mb-6 text-white">Fale Conosco</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Entre em contato com nossa equipe de especialistas e descubra como
             podemos impulsionar seu negócio
           </p>
