@@ -234,9 +234,6 @@ const Contato = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="mb-4">Nossa Localização</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Estamos estrategicamente localizados em Maringá, Paraná, no coração do agronegócio brasileiro
-            </p>
           </div>
           
           <div className="max-w-5xl mx-auto">
