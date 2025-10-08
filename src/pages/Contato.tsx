@@ -234,9 +234,6 @@ const Contato = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="mb-4">Nossa Localização</h2>
-            <p className="text-lg text-muted-foreground">
-              Visite nosso escritório em Maringá, Paraná
-            </p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-strong h-96">
             <iframe
