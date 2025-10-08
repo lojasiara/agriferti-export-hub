@@ -175,7 +175,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="mb-6">Muito Além da Intermediação</h2>
+              <h2 className="mb-6 text-center">Muito Além da Intermediação</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 O agronegócio brasileiro é reconhecido mundialmente pela sua
                 produtividade e qualidade. Mas transformar uma safra em
