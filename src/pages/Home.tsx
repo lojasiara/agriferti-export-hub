@@ -16,6 +16,10 @@ import partnerAndersons from "@/assets/partner-andersons.png";
 import partnerBld from "@/assets/partner-bld.png";
 import partnerMultiOne from "@/assets/partner-multi-one.png";
 import partnerGlenResources from "@/assets/partner-glen-resources.png";
+import partnerDesratoxy from "@/assets/partner-desratoxy.png";
+import partnerAudcont from "@/assets/partner-audcont.png";
+import partnerUnimar from "@/assets/partner-unimar.png";
+import partnerMmjv from "@/assets/partner-mmjv.png";
 
 const Home = () => {
   const featuredProducts = [
@@ -255,6 +259,10 @@ const Home = () => {
               { name: "BLD+", image: partnerBld },
               { name: "Multi One Group Inc.", image: partnerMultiOne },
               { name: "Glen Resources", image: partnerGlenResources },
+              { name: "Desratoxy", image: partnerDesratoxy },
+              { name: "Audcont Contadores", image: partnerAudcont },
+              { name: "Unimar International", image: partnerUnimar },
+              { name: "MMJV Grãos", image: partnerMmjv },
             ].map((partner, index) => (
               <Card
                 key={index}
