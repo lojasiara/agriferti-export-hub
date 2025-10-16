@@ -14,6 +14,8 @@ import partnerManoJulio from "@/assets/partner-mano-julio.png";
 import partnerCopenhagen from "@/assets/partner-copenhagen.png";
 import partnerAndersons from "@/assets/partner-andersons.png";
 import partnerBld from "@/assets/partner-bld.png";
+import partnerMultiOne from "@/assets/partner-multi-one.png";
+import partnerGlenResources from "@/assets/partner-glen-resources.png";
 
 const Home = () => {
   const featuredProducts = [
@@ -251,6 +253,8 @@ const Home = () => {
               { name: "Copenhagen Merchants", image: partnerCopenhagen },
               { name: "The Andersons", image: partnerAndersons },
               { name: "BLD+", image: partnerBld },
+              { name: "Multi One Group Inc.", image: partnerMultiOne },
+              { name: "Glen Resources", image: partnerGlenResources },
             ].map((partner, index) => (
               <Card
                 key={index}

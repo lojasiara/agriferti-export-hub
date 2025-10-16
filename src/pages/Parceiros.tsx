@@ -9,6 +9,13 @@ import partnerBld from "@/assets/partner-bld.png";
 import partnerMultiOne from "@/assets/partner-multi-one.png";
 import partnerGlenResources from "@/assets/partner-glen-resources.png";
 import partnerDesratoxy from "@/assets/partner-desratoxy.png";
+import partnerAudcont from "@/assets/partner-audcont.png";
+import partnerUnimar from "@/assets/partner-unimar.png";
+import partnerMmjv from "@/assets/partner-mmjv.png";
+import partnerPetra from "@/assets/partner-petra.png";
+import partnerAgronoite from "@/assets/partner-agronoite.png";
+import partnerAgroQuality from "@/assets/partner-agroquality.png";
+import partnerAgv from "@/assets/partner-agv.png";
 
 const Parceiros = () => {
   const partners = [
@@ -47,6 +54,34 @@ const Parceiros = () => {
     {
       name: "Desratoxy",
       image: partnerDesratoxy,
+    },
+    {
+      name: "Audcont Contadores",
+      image: partnerAudcont,
+    },
+    {
+      name: "Unimar International",
+      image: partnerUnimar,
+    },
+    {
+      name: "MMJV Grãos",
+      image: partnerMmjv,
+    },
+    {
+      name: "Petra Agronegócio",
+      image: partnerPetra,
+    },
+    {
+      name: "Agronoite",
+      image: partnerAgronoite,
+    },
+    {
+      name: "Agro Quality",
+      image: partnerAgroQuality,
+    },
+    {
+      name: "AGV",
+      image: partnerAgv,
     },
   ];
 
