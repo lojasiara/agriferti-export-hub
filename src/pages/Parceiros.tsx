@@ -24,6 +24,12 @@ import partnerCj from "@/assets/partner-cj.png";
 import partnerOzturk from "@/assets/partner-ozturk.png";
 import partnerOnetrade from "@/assets/partner-onetrade.png";
 import partnerSchroff from "@/assets/partner-schroff.jpeg";
+import partnerAgrolog from "@/assets/partner-agrolog.jpeg";
+import partnerCentera from "@/assets/partner-centera.jpeg";
+import partnerBradesco from "@/assets/partner-bradesco.jpeg";
+import partnerAdityaBirla from "@/assets/partner-aditya-birla.jpeg";
+import partnerArasco from "@/assets/partner-arasco.jpeg";
+import partnerLevelA from "@/assets/partner-level-a.jpeg";
 
 const Parceiros = () => {
   const partners = [
@@ -122,6 +128,30 @@ const Parceiros = () => {
     {
       name: "Schroff",
       image: partnerSchroff,
+    },
+    {
+      name: "Agrolog Soluções",
+      image: partnerAgrolog,
+    },
+    {
+      name: "Centera Soluções Logísticas",
+      image: partnerCentera,
+    },
+    {
+      name: "Bradesco",
+      image: partnerBradesco,
+    },
+    {
+      name: "Aditya Birla Group",
+      image: partnerAdityaBirla,
+    },
+    {
+      name: "Arasco",
+      image: partnerArasco,
+    },
+    {
+      name: "Level A Commodities",
+      image: partnerLevelA,
     },
   ];
 
