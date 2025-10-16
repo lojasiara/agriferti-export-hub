@@ -16,6 +16,14 @@ import partnerPetra from "@/assets/partner-petra.png";
 import partnerAgronoite from "@/assets/partner-agronoite.png";
 import partnerAgroQuality from "@/assets/partner-agroquality.png";
 import partnerAgv from "@/assets/partner-agv.png";
+import partnerTrinity from "@/assets/partner-trinity.jpeg";
+import partnerKwiatkowsky from "@/assets/partner-kwiatkowsky.jpeg";
+import partnerKdn from "@/assets/partner-kdn.jpeg";
+import partnerDmmjv from "@/assets/partner-dmmjv.png";
+import partnerCj from "@/assets/partner-cj.png";
+import partnerOzturk from "@/assets/partner-ozturk.png";
+import partnerOnetrade from "@/assets/partner-onetrade.png";
+import partnerSchroff from "@/assets/partner-schroff.jpeg";
 
 const Parceiros = () => {
   const partners = [
@@ -82,6 +90,38 @@ const Parceiros = () => {
     {
       name: "AGV",
       image: partnerAgv,
+    },
+    {
+      name: "Trinity Energia",
+      image: partnerTrinity,
+    },
+    {
+      name: "Kwiatkowsky & Corradini",
+      image: partnerKwiatkowsky,
+    },
+    {
+      name: "KDN",
+      image: partnerKdn,
+    },
+    {
+      name: "DMMJV",
+      image: partnerDmmjv,
+    },
+    {
+      name: "CJ",
+      image: partnerCj,
+    },
+    {
+      name: "Öztürk Holding",
+      image: partnerOzturk,
+    },
+    {
+      name: "OneTrade",
+      image: partnerOnetrade,
+    },
+    {
+      name: "Schroff",
+      image: partnerSchroff,
     },
   ];
 
