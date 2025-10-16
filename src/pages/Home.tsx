@@ -8,6 +8,12 @@ import sojaImage from "@/assets/soja.jpg";
 import milhoImage from "@/assets/milho.jpg";
 import cafeImage from "@/assets/cafe.jpg";
 import carneImage from "@/assets/carne-bovina.jpg";
+import partnerLbh from "@/assets/partner-lbh-group.png";
+import partnerPatzo from "@/assets/partner-patzo.png";
+import partnerManoJulio from "@/assets/partner-mano-julio.png";
+import partnerCopenhagen from "@/assets/partner-copenhagen.png";
+import partnerAndersons from "@/assets/partner-andersons.png";
+import partnerBld from "@/assets/partner-bld.png";
 
 const Home = () => {
   const featuredProducts = [
@@ -221,6 +227,51 @@ const Home = () => {
                 className="w-full h-full object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="py-20 relative">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 gradient-primary rounded-full"></div>
+        
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="mb-4 text-primary">Nossos Parceiros</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Trabalhamos com líderes globais para conectar o Brasil ao mundo
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+            {[
+              { name: "LBH Group", image: partnerLbh },
+              { name: "Patzo", image: partnerPatzo },
+              { name: "Mano Julio", image: partnerManoJulio },
+              { name: "Copenhagen Merchants", image: partnerCopenhagen },
+              { name: "The Andersons", image: partnerAndersons },
+              { name: "BLD+", image: partnerBld },
+            ].map((partner, index) => (
+              <Card
+                key={index}
+                className="group p-6 flex items-center justify-center border-none shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105 bg-white"
+              >
+                <img
+                  src={partner.image}
+                  alt={partner.name}
+                  className="max-w-full max-h-16 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                />
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link to="/parceiros">
+              <Button size="lg" className="gradient-primary text-white">
+                Ver Todos os Parceiros
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
