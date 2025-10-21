@@ -158,7 +158,17 @@ const Parceiros = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero relative overflow-hidden">
+      <section className="pt-32 pb-20 relative overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/parceiros-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/40 to-secondary/50"></div>
         <div className="absolute -top-10 -left-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
         <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-white/10 rounded-full blur-3xl"></div>
         
