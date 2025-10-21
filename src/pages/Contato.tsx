@@ -31,7 +31,7 @@ const Contato = () => {
       icon: "whatsapp" as any,
       title: t('contact.info.whatsapp'),
       content: "+55 44 9959-9964",
-      link: "https://wa.me/5544995999964",
+      link: "https://wa.me/5544999599964",
     },
     {
       icon: Mail,
@@ -232,7 +232,7 @@ const Contato = () => {
                     </Button>
                     
                     <a
-                      href="https://wa.me/5544995999964"
+                      href="https://wa.me/5544999599964"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full"
