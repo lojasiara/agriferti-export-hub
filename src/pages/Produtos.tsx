@@ -15,6 +15,18 @@ import sucoLaranjaImage from "@/assets/suco-laranja.jpg";
 import frutasImage from "@/assets/frutas.jpg";
 import melImage from "@/assets/mel.jpg";
 import trigoImage from "@/assets/trigo.jpg";
+import ureiaImage from "@/assets/fertilizante-ureia.jpg";
+import sulfatoAmonioImage from "@/assets/fertilizante-sulfato-amonio.jpg";
+import sspImage from "@/assets/fertilizante-ssp.jpg";
+import tspImage from "@/assets/fertilizante-tsp.jpg";
+import rochaFosfaticaImage from "@/assets/fertilizante-rocha-fosfatica.jpg";
+import ferroImage from "@/assets/mineral-ferro.jpg";
+import manganesImage from "@/assets/mineral-manganes.jpg";
+import bauxitaImage from "@/assets/mineral-bauxita.jpg";
+import niobioImage from "@/assets/mineral-niobio.jpg";
+import cobreImage from "@/assets/mineral-cobre.jpg";
+import ouroImage from "@/assets/mineral-ouro.jpg";
+import zincoChumboImage from "@/assets/mineral-zinco-chumbo.jpg";
 
 const Produtos = () => {
   const [activeTab, setActiveTab] = useState("agro");
@@ -151,23 +163,66 @@ const Produtos = () => {
   const fertilizers = [
     {
       name: "Ureia",
-      description: "Fertilizante nitrogenado de alta concentração",
+      image: ureiaImage,
+      description: "Fertilizante nitrogenado de alta concentração, ideal para o desenvolvimento vegetativo e o aumento de produtividade.",
     },
     {
       name: "Sulfato de Amônio",
-      description: "Fornecedor de nitrogênio e enxofre",
+      image: sulfatoAmonioImage,
+      description: "Fonte equilibrada de nitrogênio e enxofre, essencial para o crescimento saudável das plantas.",
     },
     {
-      name: "Superfosfato Simples",
-      description: "Fonte de fósforo e cálcio",
+      name: "Superfosfato Simples (SSP)",
+      image: sspImage,
+      description: "Fonte de fósforo e cálcio, promovendo o fortalecimento das raízes e melhor absorção de nutrientes.",
     },
     {
-      name: "Superfosfato Triplo",
-      description: "Alta concentração de fósforo",
+      name: "Superfosfato Triplo (TSP)",
+      image: tspImage,
+      description: "Alta concentração de fósforo, indicado para solos com baixa disponibilidade deste nutriente.",
     },
     {
       name: "Rocha Fosfática",
-      description: "Matéria-prima para fertilizantes fosfatados",
+      image: rochaFosfaticaImage,
+      description: "Matéria-prima natural para formulações fosfatadas, ideal para uso direto ou industrialização.",
+    },
+  ];
+
+  const minerals = [
+    {
+      name: "Minério de Ferro",
+      image: ferroImage,
+      description: "Base da siderurgia mundial, responsável por grande parte das exportações brasileiras.",
+    },
+    {
+      name: "Manganês",
+      image: manganesImage,
+      description: "Essencial para a produção de aço e ligas metálicas de alta resistência.",
+    },
+    {
+      name: "Bauxita",
+      image: bauxitaImage,
+      description: "Principal fonte de alumínio, utilizado em diversos setores industriais.",
+    },
+    {
+      name: "Nióbio",
+      image: niobioImage,
+      description: "Mineral de alto valor tecnológico, utilizado na fabricação de aços especiais e superligas.",
+    },
+    {
+      name: "Cobre",
+      image: cobreImage,
+      description: "Amplamente utilizado em energia, eletrônica e construção civil.",
+    },
+    {
+      name: "Ouro",
+      image: ouroImage,
+      description: "Recurso mineral de grande relevância econômica e estratégica.",
+    },
+    {
+      name: "Zinco e Chumbo",
+      image: zincoChumboImage,
+      description: "Importantes para galvanização, baterias e ligas metálicas diversas.",
     },
   ];
 
@@ -252,45 +307,59 @@ const Produtos = () => {
               </div>
             </TabsContent>
 
-            <TabsContent value="fertilizers">
-              <div className="max-w-4xl mx-auto">
-                <div className="mb-12">
-                  <img
-                    src={fertilizantesImage}
-                    alt="Fertilizantes"
-                    className="w-full h-96 object-cover rounded-2xl shadow-medium"
-                  />
+            <TabsContent value="fertilizers" className="space-y-12">
+              {/* Hero Image */}
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-medium">
+                <img
+                  src={fertilizantesImage}
+                  alt="Fertilizantes e Minerais"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
+                  <div className="p-8">
+                    <h2 className="text-white mb-2">Fertilizantes e Minerais</h2>
+                    <p className="text-white/90 text-lg">A Base da Produção e do Desenvolvimento</p>
+                  </div>
                 </div>
+              </div>
 
-                <Card className="border-none shadow-soft mb-8">
+              {/* Fertilizantes Section */}
+              <div className="container mx-auto px-4">
+                <Card className="border-none shadow-soft mb-12">
                   <CardHeader>
-                    <CardTitle>
-                      Fertilizantes: A Base da Produção Agrícola
-                    </CardTitle>
+                    <CardTitle className="text-2xl">Fertilizantes: Impulsionando o Agronegócio</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-6">
-                      O setor de fertilizantes é estratégico para a
-                      competitividade do agronegócio brasileiro, e a AgriFerti
-                      se destaca como fornecedora confiável de insumos de alto
-                      padrão. Representamos fabricantes internacionais e
-                      oferecemos soluções essenciais para maximizar a
-                      produtividade.
+                    <p className="text-muted-foreground text-lg">
+                      O setor de fertilizantes é um dos pilares da competitividade agrícola brasileira. 
+                      A AgriFerti se destaca como uma fornecedora confiável de insumos de alta performance, 
+                      representando fabricantes internacionais de excelência e oferecendo soluções que 
+                      potencializam a produtividade e a sustentabilidade no campo.
                     </p>
                   </CardContent>
                 </Card>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <h3 className="mb-8 text-center text-primary">Principais Fertilizantes</h3>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                   {fertilizers.map((fertilizer, index) => (
                     <Card
                       key={index}
-                      className="border-none shadow-soft hover:shadow-medium transition-all duration-300"
+                      className="overflow-hidden border-none shadow-soft hover:shadow-medium transition-all duration-300 group"
                     >
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={fertilizer.image}
+                          alt={fertilizer.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                      </div>
                       <CardContent className="p-6">
-                        <h3 className="text-xl font-bold mb-2 text-primary">
+                        <h4 className="text-xl font-bold mb-3 text-primary">
                           {fertilizer.name}
-                        </h3>
-                        <p className="text-muted-foreground">
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
                           {fertilizer.description}
                         </p>
                       </CardContent>
@@ -298,13 +367,54 @@ const Produtos = () => {
                   ))}
                 </div>
 
-                <div className="mt-12 gradient-hero p-8 rounded-2xl text-white text-center">
-                  <h3 className="mb-4 text-white">Nosso Compromisso</h3>
-                  <p className="text-lg opacity-90">
-                    Entregar qualidade, previsibilidade e parcerias duradouras,
-                    fortalecendo toda a cadeia produtiva agrícola.
+                {/* Minerals Section */}
+                <div className="gradient-hero p-8 rounded-2xl mb-12">
+                  <h3 className="mb-4 text-white text-center">Metais e Minerais: Recursos que Movem Economias</h3>
+                  <p className="text-white/90 text-center max-w-3xl mx-auto">
+                    Além dos fertilizantes, a AgriFerti também atua no fornecimento e exportação de metais e 
+                    minerais estratégicos, contribuindo para o fortalecimento da indústria global e o comércio internacional.
                   </p>
                 </div>
+
+                <h3 className="mb-8 text-center text-primary">Principais Metais e Minerais Exportados pelo Brasil</h3>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                  {minerals.map((mineral, index) => (
+                    <Card
+                      key={index}
+                      className="overflow-hidden border-none shadow-soft hover:shadow-medium transition-all duration-300 group"
+                    >
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={mineral.image}
+                          alt={mineral.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                      </div>
+                      <CardContent className="p-6">
+                        <h4 className="text-xl font-bold mb-3 text-primary">
+                          {mineral.name}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {mineral.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                {/* Commitment Section */}
+                <Card className="border-none shadow-soft bg-gradient-to-br from-background to-muted/30">
+                  <CardContent className="p-8 text-center">
+                    <h3 className="mb-4 text-primary">Nosso Compromisso</h3>
+                    <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                      Entregar qualidade, previsibilidade e parcerias duradouras, fortalecendo toda a 
+                      cadeia produtiva agrícola e industrial. Conectamos produtores brasileiros aos 
+                      mercados globais com expertise, segurança e credibilidade.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </TabsContent>
           </Tabs>
