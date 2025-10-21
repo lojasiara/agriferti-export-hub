@@ -30,6 +30,7 @@ import partnerBradesco from "@/assets/partner-bradesco.jpeg";
 import partnerAdityaBirla from "@/assets/partner-aditya-birla.jpeg";
 import partnerArasco from "@/assets/partner-arasco.jpeg";
 import partnerLevelA from "@/assets/partner-level-a.jpeg";
+import partnerAnamax from "@/assets/partner-anamax.png";
 
 const Parceiros = () => {
   const partners = [
@@ -152,6 +153,10 @@ const Parceiros = () => {
     {
       name: "Level A Commodities",
       image: partnerLevelA,
+    },
+    {
+      name: "Anamax Trading",
+      image: partnerAnamax,
     },
   ];
 
