@@ -1,7 +1,6 @@
 import { Globe, Target, Award, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
-import heroImage from "@/assets/hero-agro.jpg";
 
 const QuemSomos = () => {
   const values = [
@@ -35,12 +34,16 @@ const QuemSomos = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
         >
-          <div className="absolute inset-0 gradient-hero" />
-        </div>
+          <source src="/videos/quem-somos-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/40 to-secondary/50" />
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="mb-6 animate-fade-in text-white">Quem Somos</h1>
