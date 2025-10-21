@@ -225,6 +225,22 @@ const Contato = () => {
                     >
                       Enviar Mensagem
                     </Button>
+                    
+                    <a
+                      href="https://wa.me/554432653966"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full"
+                    >
+                      <Button
+                        type="button"
+                        size="lg"
+                        variant="outline"
+                        className="w-full"
+                      >
+                        Fale Conosco pelo WhatsApp
+                      </Button>
+                    </a>
                   </form>
                 </CardContent>
               </Card>
