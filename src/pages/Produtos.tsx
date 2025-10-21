@@ -28,205 +28,33 @@ import niobioImage from "@/assets/mineral-niobio.jpg";
 import cobreImage from "@/assets/mineral-cobre.jpg";
 import ouroImage from "@/assets/mineral-ouro.jpg";
 import zincoChumboImage from "@/assets/mineral-zinco-chumbo.jpg";
+import ptBRProducts from "@/i18n/locales/pt-BR-products.json";
+import enUSProducts from "@/i18n/locales/en-US-products.json";
 
 const Produtos = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeTab, setActiveTab] = useState("agro");
 
-  const agroProducts = [
-    {
-      name: "Soja",
-      image: sojaImage,
-      description: "A potência que move o agronegócio brasileiro",
-      details:
-        "O Brasil ocupa posição de destaque no comércio global de soja, respondendo por quase metade das exportações mundiais.",
-      markets: ["China", "União Europeia", "Sudeste Asiático", "Oriente Médio"],
-      harvest: "Janeiro a Maio",
-    },
-    {
-      name: "Milho",
-      image: milhoImage,
-      description: "Competitividade e qualidade do Brasil para o mundo",
-      details:
-        "Cultivado em duas safras anuais, garantindo abastecimento contínuo aos mercados internacionais.",
-      markets: ["Japão", "México", "Vietnã", "Irã", "União Europeia"],
-      harvest: "Fevereiro a Maio e Junho a Agosto",
-    },
-    {
-      name: "Café",
-      image: cafeImage,
-      description: "Tradição e qualidade reconhecidas mundialmente",
-      details:
-        "Brasil é o maior produtor e exportador de café do mundo, responsável por quase um terço da produção global.",
-      markets: [
-        "Estados Unidos",
-        "Alemanha",
-        "Japão",
-        "Itália",
-        "Bélgica",
-      ],
-      harvest: "Maio a Setembro",
-    },
-    {
-      name: "Carne Bovina",
-      image: carneImage,
-      description: "Referência mundial em qualidade e segurança",
-      details:
-        "Reconhecida por sua qualidade, maciez, sabor e padrões de segurança alimentar.",
-      markets: [
-        "China",
-        "Hong Kong",
-        "Emirados Árabes Unidos",
-        "Chile",
-        "União Europeia",
-      ],
-      harvest: "Produção contínua",
-    },
-    {
-      name: "Açúcar",
-      image: acucarImage,
-      description: "Maior produtor e exportador mundial",
-      details:
-        "Liderança consolidada nas variantes VHP, cristal e refinado.",
-      markets: [
-        "China",
-        "Argélia",
-        "Bangladesh",
-        "Indonésia",
-        "União Europeia",
-      ],
-      harvest: "Abril a Novembro",
-    },
-    {
-      name: "Algodão",
-      image: algodaoImage,
-      description: "Alta qualidade da fibra brasileira",
-      details:
-        "Reconhecido pela eficiência na colheita mecanizada e rastreabilidade.",
-      markets: ["China", "Vietnã", "Turquia", "Europa"],
-      harvest: "Junho a Setembro",
-    },
-    {
-      name: "Frango",
-      image: frangoImage,
-      description: "Líder mundial em exportação de carne de frango",
-      details:
-        "Carne de frango brasileira de alta qualidade, com rigorosos padrões sanitários e certificações internacionais.",
-      markets: ["China", "Japão", "Arábia Saudita", "Emirados Árabes", "União Europeia"],
-      harvest: "Produção contínua",
-    },
-    {
-      name: "Carne Suína",
-      image: carneSuinaImage,
-      description: "Qualidade premium e segurança alimentar",
-      details:
-        "Carne suína brasileira com alto padrão de qualidade, atendendo exigências dos mercados mais rigorosos.",
-      markets: ["China", "Hong Kong", "Chile", "Singapura", "Vietnã"],
-      harvest: "Produção contínua",
-    },
-    {
-      name: "Suco de Laranja",
-      image: sucoLaranjaImage,
-      description: "Maior exportador mundial de suco de laranja",
-      details:
-        "Brasil responde por mais de 70% das exportações mundiais de suco de laranja concentrado.",
-      markets: ["Estados Unidos", "União Europeia", "Japão", "Canadá"],
-      harvest: "Maio a Dezembro",
-    },
-    {
-      name: "Frutas",
-      image: frutasImage,
-      description: "Diversidade tropical de alta qualidade",
-      details:
-        "Frutas tropicais brasileiras reconhecidas pela qualidade, sabor e sustentabilidade. Incluindo manga, melão, uva, mamão e mais.",
-      markets: ["União Europeia", "Estados Unidos", "Argentina", "Canadá", "Reino Unido"],
-      harvest: "Variável por produto",
-    },
-    {
-      name: "Mel",
-      image: melImage,
-      description: "Mel natural de qualidade superior",
-      details:
-        "Mel brasileiro puro e natural, com certificações de qualidade e rastreabilidade completa.",
-      markets: ["Estados Unidos", "Alemanha", "Reino Unido", "Japão", "Canadá"],
-      harvest: "Durante todo o ano",
-    },
-    {
-      name: "Trigo",
-      image: trigoImage,
-      description: "Crescente produção nacional de trigo",
-      details:
-        "Trigo brasileiro de qualidade, com expansão da produção e melhoria contínua nos padrões.",
-      markets: ["Países da América do Sul", "África", "Sudeste Asiático"],
-      harvest: "Setembro a Dezembro",
-    },
-  ];
+  const productImages = [sojaImage, milhoImage, cafeImage, carneImage, acucarImage, algodaoImage, frangoImage, carneSuinaImage, sucoLaranjaImage, frutasImage, melImage, trigoImage];
+  const fertilizerImages = [ureiaImage, sulfatoAmonioImage, sspImage, tspImage, rochaFosfaticaImage];
+  const mineralImages = [ferroImage, manganesImage, bauxitaImage, niobioImage, cobreImage, ouroImage, zincoChumboImage];
 
-  const fertilizers = [
-    {
-      name: "Ureia",
-      image: ureiaImage,
-      description: "Fertilizante nitrogenado de alta concentração, ideal para o desenvolvimento vegetativo e o aumento de produtividade.",
-    },
-    {
-      name: "Sulfato de Amônio",
-      image: sulfatoAmonioImage,
-      description: "Fonte equilibrada de nitrogênio e enxofre, essencial para o crescimento saudável das plantas.",
-    },
-    {
-      name: "Superfosfato Simples (SSP)",
-      image: sspImage,
-      description: "Fonte de fósforo e cálcio, promovendo o fortalecimento das raízes e melhor absorção de nutrientes.",
-    },
-    {
-      name: "Superfosfato Triplo (TSP)",
-      image: tspImage,
-      description: "Alta concentração de fósforo, indicado para solos com baixa disponibilidade deste nutriente.",
-    },
-    {
-      name: "Rocha Fosfática",
-      image: rochaFosfaticaImage,
-      description: "Matéria-prima natural para formulações fosfatadas, ideal para uso direto ou industrialização.",
-    },
-  ];
+  const productsData = i18n.language === 'pt-BR' ? ptBRProducts : enUSProducts;
+  
+  const agroProducts = productsData.agroProducts.map((product: any, index: number) => ({
+    ...product,
+    image: productImages[index]
+  }));
 
-  const minerals = [
-    {
-      name: "Minério de Ferro",
-      image: ferroImage,
-      description: "Base da siderurgia mundial, responsável por grande parte das exportações brasileiras.",
-    },
-    {
-      name: "Manganês",
-      image: manganesImage,
-      description: "Essencial para a produção de aço e ligas metálicas de alta resistência.",
-    },
-    {
-      name: "Bauxita",
-      image: bauxitaImage,
-      description: "Principal fonte de alumínio, utilizado em diversos setores industriais.",
-    },
-    {
-      name: "Nióbio",
-      image: niobioImage,
-      description: "Mineral de alto valor tecnológico, utilizado na fabricação de aços especiais e superligas.",
-    },
-    {
-      name: "Cobre",
-      image: cobreImage,
-      description: "Amplamente utilizado em energia, eletrônica e construção civil.",
-    },
-    {
-      name: "Ouro",
-      image: ouroImage,
-      description: "Recurso mineral de grande relevância econômica e estratégica.",
-    },
-    {
-      name: "Zinco e Chumbo",
-      image: zincoChumboImage,
-      description: "Importantes para galvanização, baterias e ligas metálicas diversas.",
-    },
-  ];
+  const fertilizers = productsData.fertilizers.map((fertilizer: any, index: number) => ({
+    ...fertilizer,
+    image: fertilizerImages[index]
+  }));
+
+  const minerals = productsData.minerals.map((mineral: any, index: number) => ({
+    ...mineral,
+    image: mineralImages[index]
+  }));
 
   return (
     <Layout>

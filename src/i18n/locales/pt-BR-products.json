@@ -1,0 +1,140 @@
+{
+  "agroProducts": [
+    {
+      "name": "Soja",
+      "description": "A potência que move o agronegócio brasileiro",
+      "details": "O Brasil ocupa posição de destaque no comércio global de soja, respondendo por quase metade das exportações mundiais.",
+      "markets": ["China", "União Europeia", "Sudeste Asiático", "Oriente Médio"],
+      "harvest": "Janeiro a Maio"
+    },
+    {
+      "name": "Milho",
+      "description": "Competitividade e qualidade do Brasil para o mundo",
+      "details": "Cultivado em duas safras anuais, garantindo abastecimento contínuo aos mercados internacionais.",
+      "markets": ["Japão", "México", "Vietnã", "Irã", "União Europeia"],
+      "harvest": "Fevereiro a Maio e Junho a Agosto"
+    },
+    {
+      "name": "Café",
+      "description": "Tradição e qualidade reconhecidas mundialmente",
+      "details": "Brasil é o maior produtor e exportador de café do mundo, responsável por quase um terço da produção global.",
+      "markets": ["Estados Unidos", "Alemanha", "Japão", "Itália", "Bélgica"],
+      "harvest": "Maio a Setembro"
+    },
+    {
+      "name": "Carne Bovina",
+      "description": "Referência mundial em qualidade e segurança",
+      "details": "Reconhecida por sua qualidade, maciez, sabor e padrões de segurança alimentar.",
+      "markets": ["China", "Hong Kong", "Emirados Árabes Unidos", "Chile", "União Europeia"],
+      "harvest": "Produção contínua"
+    },
+    {
+      "name": "Açúcar",
+      "description": "Maior produtor e exportador mundial",
+      "details": "Liderança consolidada nas variantes VHP, cristal e refinado.",
+      "markets": ["China", "Argélia", "Bangladesh", "Indonésia", "União Europeia"],
+      "harvest": "Abril a Novembro"
+    },
+    {
+      "name": "Algodão",
+      "description": "Alta qualidade da fibra brasileira",
+      "details": "Reconhecido pela eficiência na colheita mecanizada e rastreabilidade.",
+      "markets": ["China", "Vietnã", "Turquia", "Europa"],
+      "harvest": "Junho a Setembro"
+    },
+    {
+      "name": "Frango",
+      "description": "Líder mundial em exportação de carne de frango",
+      "details": "Carne de frango brasileira de alta qualidade, com rigorosos padrões sanitários e certificações internacionais.",
+      "markets": ["China", "Japão", "Arábia Saudita", "Emirados Árabes", "União Europeia"],
+      "harvest": "Produção contínua"
+    },
+    {
+      "name": "Carne Suína",
+      "description": "Qualidade premium e segurança alimentar",
+      "details": "Carne suína brasileira com alto padrão de qualidade, atendendo exigências dos mercados mais rigorosos.",
+      "markets": ["China", "Hong Kong", "Chile", "Singapura", "Vietnã"],
+      "harvest": "Produção contínua"
+    },
+    {
+      "name": "Suco de Laranja",
+      "description": "Maior exportador mundial de suco de laranja",
+      "details": "Brasil responde por mais de 70% das exportações mundiais de suco de laranja concentrado.",
+      "markets": ["Estados Unidos", "União Europeia", "Japão", "Canadá"],
+      "harvest": "Maio a Dezembro"
+    },
+    {
+      "name": "Frutas",
+      "description": "Diversidade tropical de alta qualidade",
+      "details": "Frutas tropicais brasileiras reconhecidas pela qualidade, sabor e sustentabilidade. Incluindo manga, melão, uva, mamão e mais.",
+      "markets": ["União Europeia", "Estados Unidos", "Argentina", "Canadá", "Reino Unido"],
+      "harvest": "Variável por produto"
+    },
+    {
+      "name": "Mel",
+      "description": "Mel natural de qualidade superior",
+      "details": "Mel brasileiro puro e natural, com certificações de qualidade e rastreabilidade completa.",
+      "markets": ["Estados Unidos", "Alemanha", "Reino Unido", "Japão", "Canadá"],
+      "harvest": "Durante todo o ano"
+    },
+    {
+      "name": "Trigo",
+      "description": "Crescente produção nacional de trigo",
+      "details": "Trigo brasileiro de qualidade, com expansão da produção e melhoria contínua nos padrões.",
+      "markets": ["Países da América do Sul", "África", "Sudeste Asiático"],
+      "harvest": "Setembro a Dezembro"
+    }
+  ],
+  "fertilizers": [
+    {
+      "name": "Ureia",
+      "description": "Fertilizante nitrogenado de alta concentração, ideal para o desenvolvimento vegetativo e o aumento de produtividade."
+    },
+    {
+      "name": "Sulfato de Amônio",
+      "description": "Fonte equilibrada de nitrogênio e enxofre, essencial para o crescimento saudável das plantas."
+    },
+    {
+      "name": "Superfosfato Simples (SSP)",
+      "description": "Fonte de fósforo e cálcio, promovendo o fortalecimento das raízes e melhor absorção de nutrientes."
+    },
+    {
+      "name": "Superfosfato Triplo (TSP)",
+      "description": "Alta concentração de fósforo, indicado para solos com baixa disponibilidade deste nutriente."
+    },
+    {
+      "name": "Rocha Fosfática",
+      "description": "Matéria-prima natural para formulações fosfatadas, ideal para uso direto ou industrialização."
+    }
+  ],
+  "minerals": [
+    {
+      "name": "Minério de Ferro",
+      "description": "Base da siderurgia mundial, responsável por grande parte das exportações brasileiras."
+    },
+    {
+      "name": "Manganês",
+      "description": "Essencial para a produção de aço e ligas metálicas de alta resistência."
+    },
+    {
+      "name": "Bauxita",
+      "description": "Principal fonte de alumínio, utilizado em diversos setores industriais."
+    },
+    {
+      "name": "Nióbio",
+      "description": "Mineral de alto valor tecnológico, utilizado na fabricação de aços especiais e superligas."
+    },
+    {
+      "name": "Cobre",
+      "description": "Amplamente utilizado em energia, eletrônica e construção civil."
+    },
+    {
+      "name": "Ouro",
+      "description": "Recurso mineral de grande relevância econômica e estratégica."
+    },
+    {
+      "name": "Zinco e Chumbo",
+      "description": "Importantes para galvanização, baterias e ligas metálicas diversas."
+    }
+  ]
+}

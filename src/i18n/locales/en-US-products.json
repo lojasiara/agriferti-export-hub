@@ -1,0 +1,140 @@
+{
+  "agroProducts": [
+    {
+      "name": "Soy",
+      "description": "The powerhouse driving Brazilian agribusiness",
+      "details": "Brazil holds a prominent position in global soy trade, accounting for nearly half of world exports.",
+      "markets": ["China", "European Union", "Southeast Asia", "Middle East"],
+      "harvest": "January to May"
+    },
+    {
+      "name": "Corn",
+      "description": "Brazil's competitiveness and quality for the world",
+      "details": "Cultivated in two annual harvests, ensuring continuous supply to international markets.",
+      "markets": ["Japan", "Mexico", "Vietnam", "Iran", "European Union"],
+      "harvest": "February to May and June to August"
+    },
+    {
+      "name": "Coffee",
+      "description": "Tradition and quality recognized worldwide",
+      "details": "Brazil is the world's largest coffee producer and exporter, responsible for nearly one-third of global production.",
+      "markets": ["United States", "Germany", "Japan", "Italy", "Belgium"],
+      "harvest": "May to September"
+    },
+    {
+      "name": "Beef",
+      "description": "Global reference in quality and safety",
+      "details": "Recognized for its quality, tenderness, flavor and food safety standards.",
+      "markets": ["China", "Hong Kong", "United Arab Emirates", "Chile", "European Union"],
+      "harvest": "Continuous production"
+    },
+    {
+      "name": "Sugar",
+      "description": "Largest producer and exporter worldwide",
+      "details": "Consolidated leadership in VHP, crystal and refined variants.",
+      "markets": ["China", "Algeria", "Bangladesh", "Indonesia", "European Union"],
+      "harvest": "April to November"
+    },
+    {
+      "name": "Cotton",
+      "description": "High quality Brazilian fiber",
+      "details": "Recognized for efficiency in mechanized harvesting and traceability.",
+      "markets": ["China", "Vietnam", "Turkey", "Europe"],
+      "harvest": "June to September"
+    },
+    {
+      "name": "Chicken",
+      "description": "World leader in chicken meat exports",
+      "details": "High-quality Brazilian chicken meat with rigorous sanitary standards and international certifications.",
+      "markets": ["China", "Japan", "Saudi Arabia", "United Arab Emirates", "European Union"],
+      "harvest": "Continuous production"
+    },
+    {
+      "name": "Pork",
+      "description": "Premium quality and food safety",
+      "details": "Brazilian pork with high quality standards, meeting the requirements of the most demanding markets.",
+      "markets": ["China", "Hong Kong", "Chile", "Singapore", "Vietnam"],
+      "harvest": "Continuous production"
+    },
+    {
+      "name": "Orange Juice",
+      "description": "Largest orange juice exporter worldwide",
+      "details": "Brazil accounts for more than 70% of world concentrated orange juice exports.",
+      "markets": ["United States", "European Union", "Japan", "Canada"],
+      "harvest": "May to December"
+    },
+    {
+      "name": "Fruits",
+      "description": "High-quality tropical diversity",
+      "details": "Brazilian tropical fruits recognized for quality, flavor and sustainability. Including mango, melon, grapes, papaya and more.",
+      "markets": ["European Union", "United States", "Argentina", "Canada", "United Kingdom"],
+      "harvest": "Variable by product"
+    },
+    {
+      "name": "Honey",
+      "description": "Superior quality natural honey",
+      "details": "Pure and natural Brazilian honey with quality certifications and complete traceability.",
+      "markets": ["United States", "Germany", "United Kingdom", "Japan", "Canada"],
+      "harvest": "Year-round"
+    },
+    {
+      "name": "Wheat",
+      "description": "Growing national wheat production",
+      "details": "Quality Brazilian wheat with expanding production and continuous improvement in standards.",
+      "markets": ["South American Countries", "Africa", "Southeast Asia"],
+      "harvest": "September to December"
+    }
+  ],
+  "fertilizers": [
+    {
+      "name": "Urea",
+      "description": "High concentration nitrogen fertilizer, ideal for vegetative development and increased productivity."
+    },
+    {
+      "name": "Ammonium Sulfate",
+      "description": "Balanced source of nitrogen and sulfur, essential for healthy plant growth."
+    },
+    {
+      "name": "Single Superphosphate (SSP)",
+      "description": "Source of phosphorus and calcium, promoting root strengthening and better nutrient absorption."
+    },
+    {
+      "name": "Triple Superphosphate (TSP)",
+      "description": "High phosphorus concentration, indicated for soils with low availability of this nutrient."
+    },
+    {
+      "name": "Phosphate Rock",
+      "description": "Natural raw material for phosphate formulations, ideal for direct use or industrialization."
+    }
+  ],
+  "minerals": [
+    {
+      "name": "Iron Ore",
+      "description": "Foundation of world steel industry, responsible for a large part of Brazilian exports."
+    },
+    {
+      "name": "Manganese",
+      "description": "Essential for steel production and high-strength metal alloys."
+    },
+    {
+      "name": "Bauxite",
+      "description": "Main source of aluminum, used in various industrial sectors."
+    },
+    {
+      "name": "Niobium",
+      "description": "High technological value mineral, used in the manufacture of special steels and superalloys."
+    },
+    {
+      "name": "Copper",
+      "description": "Widely used in energy, electronics and civil construction."
+    },
+    {
+      "name": "Gold",
+      "description": "Mineral resource of great economic and strategic relevance."
+    },
+    {
+      "name": "Zinc and Lead",
+      "description": "Important for galvanization, batteries and various metal alloys."
+    }
+  ]
+}
