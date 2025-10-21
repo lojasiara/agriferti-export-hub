@@ -9,6 +9,12 @@ import carneImage from "@/assets/carne-bovina.jpg";
 import acucarImage from "@/assets/acucar.jpg";
 import fertilizantesImage from "@/assets/fertilizantes.jpg";
 import algodaoImage from "@/assets/algodao.jpg";
+import frangoImage from "@/assets/frango.jpg";
+import carneSuinaImage from "@/assets/carne-suina.jpg";
+import sucoLaranjaImage from "@/assets/suco-laranja.jpg";
+import frutasImage from "@/assets/frutas.jpg";
+import melImage from "@/assets/mel.jpg";
+import trigoImage from "@/assets/trigo.jpg";
 
 const Produtos = () => {
   const [activeTab, setActiveTab] = useState("agro");
@@ -85,6 +91,60 @@ const Produtos = () => {
         "Reconhecido pela eficiência na colheita mecanizada e rastreabilidade.",
       markets: ["China", "Vietnã", "Turquia", "Europa"],
       harvest: "Junho a Setembro",
+    },
+    {
+      name: "Frango",
+      image: frangoImage,
+      description: "Líder mundial em exportação de carne de frango",
+      details:
+        "Carne de frango brasileira de alta qualidade, com rigorosos padrões sanitários e certificações internacionais.",
+      markets: ["China", "Japão", "Arábia Saudita", "Emirados Árabes", "União Europeia"],
+      harvest: "Produção contínua",
+    },
+    {
+      name: "Carne Suína",
+      image: carneSuinaImage,
+      description: "Qualidade premium e segurança alimentar",
+      details:
+        "Carne suína brasileira com alto padrão de qualidade, atendendo exigências dos mercados mais rigorosos.",
+      markets: ["China", "Hong Kong", "Chile", "Singapura", "Vietnã"],
+      harvest: "Produção contínua",
+    },
+    {
+      name: "Suco de Laranja",
+      image: sucoLaranjaImage,
+      description: "Maior exportador mundial de suco de laranja",
+      details:
+        "Brasil responde por mais de 70% das exportações mundiais de suco de laranja concentrado.",
+      markets: ["Estados Unidos", "União Europeia", "Japão", "Canadá"],
+      harvest: "Maio a Dezembro",
+    },
+    {
+      name: "Frutas",
+      image: frutasImage,
+      description: "Diversidade tropical de alta qualidade",
+      details:
+        "Frutas tropicais brasileiras reconhecidas pela qualidade, sabor e sustentabilidade. Incluindo manga, melão, uva, mamão e mais.",
+      markets: ["União Europeia", "Estados Unidos", "Argentina", "Canadá", "Reino Unido"],
+      harvest: "Variável por produto",
+    },
+    {
+      name: "Mel",
+      image: melImage,
+      description: "Mel natural de qualidade superior",
+      details:
+        "Mel brasileiro puro e natural, com certificações de qualidade e rastreabilidade completa.",
+      markets: ["Estados Unidos", "Alemanha", "Reino Unido", "Japão", "Canadá"],
+      harvest: "Durante todo o ano",
+    },
+    {
+      name: "Trigo",
+      image: trigoImage,
+      description: "Crescente produção nacional de trigo",
+      details:
+        "Trigo brasileiro de qualidade, com expansão da produção e melhoria contínua nos padrões.",
+      markets: ["Países da América do Sul", "África", "Sudeste Asiático"],
+      harvest: "Setembro a Dezembro",
     },
   ];
 
