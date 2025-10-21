@@ -229,7 +229,7 @@ const Produtos = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-1 gradient-primary z-20"></div>
         <video
           autoPlay
@@ -241,7 +241,7 @@ const Produtos = () => {
           <source src="/videos/produtos-hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/40 to-secondary/50" />
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="mb-6 text-white">Nossos Produtos</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Conectamos o Brasil aos principais mercados globais com uma ampla

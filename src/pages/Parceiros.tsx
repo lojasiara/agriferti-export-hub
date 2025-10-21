@@ -163,7 +163,7 @@ const Parceiros = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-1 gradient-primary z-20"></div>
         <video
           autoPlay
