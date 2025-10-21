@@ -48,14 +48,17 @@ const Contato = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-1 gradient-primary z-20"></div>
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80"
-            alt="Contato AgriFerti"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 gradient-hero opacity-90" />
-        </div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/contato-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/40 to-secondary/50" />
+        
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="mb-6 text-white">Fale Conosco</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
