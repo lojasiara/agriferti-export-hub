@@ -55,7 +55,7 @@ const Contato = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/contato-hero.mp4?v=2" type="video/mp4" />
+          <source src="/videos/contato-hero.mp4?v=3" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/40 to-secondary/50" />
         
