@@ -227,7 +227,7 @@ const Contato = () => {
                     </Button>
                     
                     <a
-                      href="https://wa.me/554432653966"
+                      href="https://wa.me/5544995999964"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full"
