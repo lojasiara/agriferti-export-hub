@@ -411,11 +411,6 @@ const Produtos = () => {
                     </p>
                   </CardContent>
                 </Card>
-                      cadeia produtiva agrícola e industrial. Conectamos produtores brasileiros aos 
-                      mercados globais com expertise, segurança e credibilidade.
-                    </p>
-                  </CardContent>
-                </Card>
               </div>
             </TabsContent>
           </Tabs>

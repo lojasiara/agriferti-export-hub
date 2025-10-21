@@ -129,7 +129,7 @@ const Contato = () => {
                 <CardContent className="p-8">
                   <h3 className="mb-4 text-white">{t('contact.why.title')}</h3>
                   <ul className="space-y-3">
-                    {t('contact.why.items', { returnObjects: true }).map((item: string, index: number) => (
+                    {(t('contact.why.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                       <li key={index} className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 flex-shrink-0" />
                         <span className="opacity-90">{item}</span>

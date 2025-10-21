@@ -133,7 +133,7 @@ const QuemSomos = () => {
                 {t('about.fertilizers.description')}
               </p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                {t('about.fertilizers.items', { returnObjects: true }).map((item: string, index: number) => (
+                {(t('about.fertilizers.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                   <li key={index} className="flex items-center space-x-2">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                     <span className="text-muted-foreground">{item}</span>
