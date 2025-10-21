@@ -47,6 +47,7 @@ const Contato = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 h-1 gradient-primary z-20"></div>
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&q=80"

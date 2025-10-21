@@ -230,6 +230,7 @@ const Produtos = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 h-1 gradient-primary z-20"></div>
         <video
           autoPlay
           loop
