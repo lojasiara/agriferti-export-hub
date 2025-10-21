@@ -25,6 +25,12 @@ const Contato = () => {
       link: "tel:+554432653966",
     },
     {
+      icon: Phone,
+      title: "WhatsApp",
+      content: "+55 44 9959-9964",
+      link: "https://wa.me/5544995999964",
+    },
+    {
       icon: Mail,
       title: "E-mail",
       content: "ceo@agriferti.com",
