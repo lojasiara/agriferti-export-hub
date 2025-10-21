@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 import logo from "@/assets/logo.webp";
 import logoWhite from "@/assets/logo-white.png";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -19,11 +22,11 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: "Início", path: "/" },
-    { name: "Quem Somos", path: "/quem-somos" },
-    { name: "Produtos", path: "/produtos" },
-    { name: "Parceiros", path: "/parceiros" },
-    { name: "Contato", path: "/contato" },
+    { name: t('nav.home'), path: "/" },
+    { name: t('nav.about'), path: "/quem-somos" },
+    { name: t('nav.products'), path: "/produtos" },
+    { name: t('nav.partners'), path: "/parceiros" },
+    { name: t('nav.contact'), path: "/contato" },
   ];
 
   return (
@@ -45,7 +48,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -61,9 +64,10 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
+            <LanguageSelector />
             <Link to="/contato">
               <Button className="gradient-primary text-white hover:opacity-90">
-                Fale Conosco
+                {t('nav.contactUs')}
               </Button>
             </Link>
           </div>
@@ -84,6 +88,9 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 animate-fade-in">
+            <div className="flex justify-center mb-4">
+              <LanguageSelector />
+            </div>
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -100,7 +107,7 @@ const Navbar = () => {
             ))}
             <Link to="/contato" onClick={() => setIsMobileMenuOpen(false)}>
               <Button className="gradient-primary text-white w-full mt-2">
-                Fale Conosco
+                {t('nav.contactUs')}
               </Button>
             </Link>
           </div>

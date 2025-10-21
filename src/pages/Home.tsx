@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Globe, Shield, TrendingUp, CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
@@ -23,47 +24,46 @@ import partnerUnimar from "@/assets/partner-unimar.png";
 import partnerMmjv from "@/assets/partner-mmjv.png";
 
 const Home = () => {
+  const { t } = useTranslation();
+  
   const featuredProducts = [
     {
-      name: "Soja",
+      name: t('home.products.soy.name'),
       image: sojaImage,
-      description: "Líder de exportação com forte demanda internacional",
+      description: t('home.products.soy.description'),
     },
     {
-      name: "Milho",
+      name: t('home.products.corn.name'),
       image: milhoImage,
-      description: "Ampla aceitação em mercados da Ásia e Europa",
+      description: t('home.products.corn.description'),
     },
     {
-      name: "Café",
+      name: t('home.products.coffee.name'),
       image: cafeImage,
-      description: "Produto premium com tradição e demanda global",
+      description: t('home.products.coffee.description'),
     },
     {
-      name: "Carne Bovina",
+      name: t('home.products.beef.name'),
       image: carneImage,
-      description: "Alto valor agregado com mercados rigorosos",
+      description: t('home.products.beef.description'),
     },
   ];
 
   const benefits = [
     {
       icon: Globe,
-      title: "Presença Global",
-      description:
-        "Conectamos sua produção aos maiores players nacionais e internacionais",
+      title: t('home.benefits.global.title'),
+      description: t('home.benefits.global.description'),
     },
     {
       icon: Shield,
-      title: "Segurança Total",
-      description:
-        "Contratos claros, condições justas e gestão completa de riscos",
+      title: t('home.benefits.security.title'),
+      description: t('home.benefits.security.description'),
     },
     {
       icon: TrendingUp,
-      title: "Máxima Rentabilidade",
-      description:
-        "Negociações estratégicas que maximizam seus resultados",
+      title: t('home.benefits.profitability.title'),
+      description: t('home.benefits.profitability.description'),
     },
   ];
 
@@ -85,16 +85,15 @@ const Home = () => {
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="mb-6 animate-fade-in font-bold text-white">
-            Conectando o Agronegócio Brasileiro ao Mundo
+            {t('home.hero.title')}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in opacity-90">
-            Transformamos commodities em negócios globais de alto valor com
-            segurança, eficiência e credibilidade
+            {t('home.hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Link to="/produtos">
               <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-medium">
-                Nossos Produtos
+                {t('home.hero.productsBtn')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -104,7 +103,7 @@ const Home = () => {
                 variant="outline"
                 className="border-white text-primary hover:bg-white/10"
               >
-                Fale Conosco
+                {t('home.hero.contactBtn')}
               </Button>
             </Link>
           </div>
@@ -118,10 +117,9 @@ const Home = () => {
         
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="mb-4 text-primary">Por que escolher a AgriFerti?</h2>
+            <h2 className="mb-4 text-primary">{t('home.benefits.title')}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Somos mais do que intermediadores: atuamos como parceiros
-              estratégicos em todas as etapas
+              {t('home.benefits.subtitle')}
             </p>
           </div>
 
@@ -151,9 +149,9 @@ const Home = () => {
         
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="mb-4">Produtos em Destaque</h2>
+            <h2 className="mb-4">{t('home.products.title')}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Conectamos o Brasil aos principais mercados globais
+              {t('home.products.subtitle')}
             </p>
           </div>
 
@@ -186,7 +184,7 @@ const Home = () => {
           <div className="text-center">
             <Link to="/produtos">
               <Button size="lg" className="gradient-primary text-white">
-                Ver Todos os Produtos
+                {t('home.products.viewAll')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -203,21 +201,17 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="mb-6 text-center">Muito Além da Intermediação</h2>
+              <h2 className="mb-6 text-center">{t('home.about.title')}</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                O agronegócio brasileiro é reconhecido mundialmente pela sua
-                produtividade e qualidade. Mas transformar uma safra em
-                resultados exige mais do que produzir: requer estratégia
-                comercial, acesso aos mercados certos e domínio de processos
-                logísticos e burocráticos.
+                {t('home.about.description')}
               </p>
               <div className="space-y-4 mb-8">
                 {[
-                  "Acesso a mercados globais",
-                  "Negociação segura e transparente",
-                  "Gestão de riscos e compliance",
-                  "Logística eficiente",
-                  "Burocracia simplificada",
+                  t('home.about.items.markets'),
+                  t('home.about.items.negotiation'),
+                  t('home.about.items.risk'),
+                  t('home.about.items.logistics'),
+                  t('home.about.items.bureaucracy'),
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -227,7 +221,7 @@ const Home = () => {
               </div>
               <Link to="/quem-somos">
                 <Button size="lg" className="gradient-primary text-white">
-                  Conheça Nossa História
+                  {t('home.about.btn')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -249,9 +243,9 @@ const Home = () => {
         
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="mb-4 text-primary">Nossos Parceiros</h2>
+            <h2 className="mb-4 text-primary">{t('home.partners.title')}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Trabalhamos com líderes globais para conectar o Brasil ao mundo
+              {t('home.partners.subtitle')}
             </p>
           </div>
 
@@ -286,7 +280,7 @@ const Home = () => {
           <div className="text-center">
             <Link to="/parceiros">
               <Button size="lg" className="gradient-primary text-white">
-                Ver Todos os Parceiros
+                {t('home.partners.viewAll')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -301,14 +295,13 @@ const Home = () => {
         <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-white/10 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 text-center text-white relative z-10">
-          <h2 className="mb-6 text-white">Pronto para Expandir Seus Negócios?</h2>
+          <h2 className="mb-6 text-white">{t('home.cta.title')}</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Entre em contato com nossa equipe e descubra como podemos
-            transformar sua produção em oportunidades globais
+            {t('home.cta.subtitle')}
           </p>
           <Link to="/contato">
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-medium">
-              Fale com Nossos Especialistas
+              {t('home.cta.btn')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>

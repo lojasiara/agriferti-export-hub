@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logoWhite from "@/assets/logo-white.png";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="gradient-hero text-white">
       <div className="container mx-auto px-4 py-12">
@@ -11,21 +14,20 @@ const Footer = () => {
           <div className="md:col-span-2">
             <img src={logoWhite} alt="AgriFerti Brasil" className="h-12 mb-4" />
             <p className="text-sm text-white/80 mb-4">
-              Conectando o agronegócio brasileiro aos principais mercados globais
-              com segurança, eficiência e credibilidade.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Links Rápidos */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Links Rápidos</h3>
+            <h3 className="font-semibold mb-4 text-white">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   to="/"
                   className="text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  Início
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
@@ -33,7 +35,7 @@ const Footer = () => {
                   to="/quem-somos"
                   className="text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  Quem Somos
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
@@ -41,7 +43,7 @@ const Footer = () => {
                   to="/produtos"
                   className="text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  Produtos
+                  {t('nav.products')}
                 </Link>
               </li>
               <li>
@@ -49,7 +51,7 @@ const Footer = () => {
                   to="/contato"
                   className="text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  Contato
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -57,7 +59,7 @@ const Footer = () => {
 
           {/* Contato */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Contato</h3>
+            <h3 className="font-semibold mb-4 text-white">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <Phone className="w-4 h-4 mt-1 text-white flex-shrink-0" />
@@ -76,7 +78,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  +55 (44) 9 9599-9964 (WhatsApp)
+                  +55 (44) 9 9599-9964 ({t('footer.whatsapp')})
                 </a>
               </li>
               <li className="flex items-start space-x-2">
@@ -102,8 +104,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-sm text-white/80">
-            © {new Date().getFullYear()} AgriFerti Brasil. Todos os direitos
-            reservados.
+            © {new Date().getFullYear()} {t('footer.copyright')}
           </p>
         </div>
       </div>

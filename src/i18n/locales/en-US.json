@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "partners": "Partners",
+    "contact": "Contact",
+    "contactUs": "Contact Us"
+  },
+  "home": {
+    "hero": {
+      "title": "Connecting Brazilian Agribusiness to the World",
+      "subtitle": "We transform commodities into high-value global businesses with security, efficiency and credibility",
+      "productsBtn": "Our Products",
+      "contactBtn": "Contact Us"
+    },
+    "benefits": {
+      "title": "Why choose AgriFerti?",
+      "subtitle": "We are more than intermediaries: we act as strategic partners at every stage",
+      "global": {
+        "title": "Global Presence",
+        "description": "We connect your production to the largest national and international players"
+      },
+      "security": {
+        "title": "Total Security",
+        "description": "Clear contracts, fair conditions and complete risk management"
+      },
+      "profitability": {
+        "title": "Maximum Profitability",
+        "description": "Strategic negotiations that maximize your results"
+      }
+    },
+    "products": {
+      "title": "Featured Products",
+      "subtitle": "Connecting Brazil to the main global markets",
+      "soy": {
+        "name": "Soy",
+        "description": "Export leader with strong international demand"
+      },
+      "corn": {
+        "name": "Corn",
+        "description": "Wide acceptance in Asian and European markets"
+      },
+      "coffee": {
+        "name": "Coffee",
+        "description": "Premium product with tradition and global demand"
+      },
+      "beef": {
+        "name": "Beef",
+        "description": "High added value with demanding markets"
+      },
+      "viewAll": "View All Products"
+    },
+    "about": {
+      "title": "Beyond Intermediation",
+      "description": "Brazilian agribusiness is recognized worldwide for its productivity and quality. But turning a harvest into results requires more than production: it requires commercial strategy, access to the right markets and mastery of logistical and bureaucratic processes.",
+      "items": {
+        "markets": "Access to global markets",
+        "negotiation": "Safe and transparent negotiation",
+        "risk": "Risk management and compliance",
+        "logistics": "Efficient logistics",
+        "bureaucracy": "Simplified bureaucracy"
+      },
+      "btn": "Know Our History"
+    },
+    "partners": {
+      "title": "Our Partners",
+      "subtitle": "We work with global leaders to connect Brazil to the world",
+      "viewAll": "View All Partners"
+    },
+    "cta": {
+      "title": "Ready to Expand Your Business?",
+      "subtitle": "Contact our team and discover how we can transform your production into global opportunities",
+      "btn": "Talk to Our Specialists"
+    }
+  },
+  "footer": {
+    "description": "Connecting Brazilian agribusiness to the main global markets with security, efficiency and credibility.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "copyright": "AgriFerti Brasil. All rights reserved."
+  }
+}

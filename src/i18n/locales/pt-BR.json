@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Quem Somos",
+    "products": "Produtos",
+    "partners": "Parceiros",
+    "contact": "Contato",
+    "contactUs": "Fale Conosco"
+  },
+  "home": {
+    "hero": {
+      "title": "Conectando o Agronegócio Brasileiro ao Mundo",
+      "subtitle": "Transformamos commodities em negócios globais de alto valor com segurança, eficiência e credibilidade",
+      "productsBtn": "Nossos Produtos",
+      "contactBtn": "Fale Conosco"
+    },
+    "benefits": {
+      "title": "Por que escolher a AgriFerti?",
+      "subtitle": "Somos mais do que intermediadores: atuamos como parceiros estratégicos em todas as etapas",
+      "global": {
+        "title": "Presença Global",
+        "description": "Conectamos sua produção aos maiores players nacionais e internacionais"
+      },
+      "security": {
+        "title": "Segurança Total",
+        "description": "Contratos claros, condições justas e gestão completa de riscos"
+      },
+      "profitability": {
+        "title": "Máxima Rentabilidade",
+        "description": "Negociações estratégicas que maximizam seus resultados"
+      }
+    },
+    "products": {
+      "title": "Produtos em Destaque",
+      "subtitle": "Conectamos o Brasil aos principais mercados globais",
+      "soy": {
+        "name": "Soja",
+        "description": "Líder de exportação com forte demanda internacional"
+      },
+      "corn": {
+        "name": "Milho",
+        "description": "Ampla aceitação em mercados da Ásia e Europa"
+      },
+      "coffee": {
+        "name": "Café",
+        "description": "Produto premium com tradição e demanda global"
+      },
+      "beef": {
+        "name": "Carne Bovina",
+        "description": "Alto valor agregado com mercados rigorosos"
+      },
+      "viewAll": "Ver Todos os Produtos"
+    },
+    "about": {
+      "title": "Muito Além da Intermediação",
+      "description": "O agronegócio brasileiro é reconhecido mundialmente pela sua produtividade e qualidade. Mas transformar uma safra em resultados exige mais do que produzir: requer estratégia comercial, acesso aos mercados certos e domínio de processos logísticos e burocráticos.",
+      "items": {
+        "markets": "Acesso a mercados globais",
+        "negotiation": "Negociação segura e transparente",
+        "risk": "Gestão de riscos e compliance",
+        "logistics": "Logística eficiente",
+        "bureaucracy": "Burocracia simplificada"
+      },
+      "btn": "Conheça Nossa História"
+    },
+    "partners": {
+      "title": "Nossos Parceiros",
+      "subtitle": "Trabalhamos com líderes globais para conectar o Brasil ao mundo",
+      "viewAll": "Ver Todos os Parceiros"
+    },
+    "cta": {
+      "title": "Pronto para Expandir Seus Negócios?",
+      "subtitle": "Entre em contato com nossa equipe e descubra como podemos transformar sua produção em oportunidades globais",
+      "btn": "Fale com Nossos Especialistas"
+    }
+  },
+  "footer": {
+    "description": "Conectando o agronegócio brasileiro aos principais mercados globais com segurança, eficiência e credibilidade.",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contato",
+    "whatsapp": "WhatsApp",
+    "copyright": "AgriFerti Brasil. Todos os direitos reservados."
+  }
+}
