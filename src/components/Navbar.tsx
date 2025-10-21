@@ -87,7 +87,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-in">
+          <div className="md:hidden mt-4 pb-4 animate-fade-in bg-background rounded-lg shadow-soft p-4">
             <div className="flex justify-center mb-4">
               <LanguageSelector />
             </div>
