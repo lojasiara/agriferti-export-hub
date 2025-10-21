@@ -98,7 +98,7 @@ const Contato = () => {
                           {info.link ? (
                             <a
                               href={info.link}
-                              className="text-muted-foreground hover:text-primary transition-colors whitespace-pre-line"
+                              className="text-muted-foreground hover:text-primary transition-colors whitespace-pre-line underline cursor-pointer"
                             >
                               {info.content}
                             </a>
