@@ -115,14 +115,16 @@ const Produtos = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={sojaImage}
-            alt="Produtos AgriFerti"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 gradient-hero opacity-90" />
-        </div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/produtos-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/40 to-secondary/50" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="mb-6 text-white">Nossos Produtos</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
