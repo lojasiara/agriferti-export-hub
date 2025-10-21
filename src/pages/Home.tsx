@@ -147,7 +147,7 @@ const Home = () => {
       {/* Featured Products */}
       <section className="py-20 relative">
         {/* Decorative divider */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 gradient-secondary rounded-full"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 gradient-primary rounded-full"></div>
         
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -198,7 +198,7 @@ const Home = () => {
       <section className="py-20 bg-muted/30 relative">
         {/* Decorative corner elements */}
         <div className="absolute top-0 left-0 w-20 h-20 gradient-primary opacity-20 rounded-br-full"></div>
-        <div className="absolute top-0 right-0 w-20 h-20 gradient-secondary opacity-20 rounded-bl-full"></div>
+        <div className="absolute top-0 right-0 w-20 h-20 gradient-primary opacity-20 rounded-bl-full"></div>
         
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
