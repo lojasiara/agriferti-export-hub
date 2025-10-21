@@ -188,7 +188,6 @@ const Parceiros = () => {
 
       {/* Partners Grid */}
       <section className="py-20 relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 gradient-primary rounded-full"></div>
         
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
