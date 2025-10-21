@@ -7,7 +7,7 @@ import milhoImage from "@/assets/milho.jpg";
 import cafeImage from "@/assets/cafe.jpg";
 import carneImage from "@/assets/carne-bovina.jpg";
 import acucarImage from "@/assets/acucar.jpg";
-import fertilizantesImage from "@/assets/fertilizantes.jpg";
+import fertilizantesImage from "@/assets/fertilizantes-minerais-banner.png";
 import algodaoImage from "@/assets/algodao.jpg";
 import frangoImage from "@/assets/frango.jpg";
 import carneSuinaImage from "@/assets/carne-suina.jpg";
