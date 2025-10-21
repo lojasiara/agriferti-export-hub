@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -25,7 +25,7 @@ const Contato = () => {
       link: "tel:+554432653966",
     },
     {
-      icon: Phone,
+      icon: MessageCircle,
       title: "WhatsApp",
       content: "+55 44 9959-9964",
       link: "https://wa.me/5544995999964",
