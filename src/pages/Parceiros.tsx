@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import partnerLbh from "@/assets/partner-lbh-group.png";
 import partnerPatzo from "@/assets/partner-patzo.png";
@@ -33,6 +34,8 @@ import partnerLevelA from "@/assets/partner-level-a.jpeg";
 import partnerAnamax from "@/assets/partner-anamax.png";
 
 const Parceiros = () => {
+  const { t } = useTranslation();
+  
   const partners = [
     {
       name: "LBH Group",
@@ -179,9 +182,9 @@ const Parceiros = () => {
         <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-white/10 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 text-center text-white relative z-10">
-          <h1 className="mb-6 text-white animate-fade-in">Nossos Parceiros</h1>
+          <h1 className="mb-6 text-white animate-fade-in">{t('partners.hero.title')}</h1>
           <p className="text-xl max-w-3xl mx-auto opacity-90 animate-fade-in">
-            Trabalhamos com líderes globais que compartilham nosso compromisso com a excelência e a inovação no agronegócio
+            {t('partners.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -191,9 +194,9 @@ const Parceiros = () => {
         
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="mb-4 text-primary">Parcerias Estratégicas</h2>
+            <h2 className="mb-4 text-primary">{t('partners.strategic.title')}</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Construímos relacionamentos sólidos com empresas de renome mundial para garantir as melhores soluções aos nossos clientes
+              {t('partners.strategic.subtitle')}
             </p>
           </div>
 
@@ -220,9 +223,9 @@ const Parceiros = () => {
         <div className="absolute top-0 right-0 w-20 h-20 gradient-primary opacity-20 rounded-bl-full"></div>
         
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-6">Confiança e Credibilidade</h2>
+          <h2 className="mb-6">{t('partners.trust.title')}</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Nossa rede de parceiros reflete nosso compromisso com a qualidade e a confiabilidade. Cada parceria é construída com base em valores compartilhados de excelência, sustentabilidade e crescimento mútuo no mercado global do agronegócio.
+            {t('partners.trust.description')}
           </p>
         </div>
       </section>

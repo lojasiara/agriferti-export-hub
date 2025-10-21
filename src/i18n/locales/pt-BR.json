@@ -7,6 +7,165 @@
     "contact": "Contato",
     "contactUs": "Fale Conosco"
   },
+  "about": {
+    "hero": {
+      "title": "Quem Somos",
+      "subtitle": "Conectando Mercados, Gerando Resultados"
+    },
+    "title": "AgriFerti Brasil",
+    "intro": "A AgriFerti Brasil nasceu com o propósito de transformar o agronegócio em negócios globais de alto valor. Somos mais do que intermediadores: atuamos como parceiros estratégicos, conectando produtores, cooperativas, indústrias e tradings brasileiras aos principais compradores internacionais, sempre com segurança, eficiência e credibilidade.",
+    "values": {
+      "global": {
+        "title": "Presença Global",
+        "description": "Networking sólido e experiência internacional nas principais regiões produtoras do Brasil"
+      },
+      "results": {
+        "title": "Foco em Resultados",
+        "description": "Compromisso total em entregar qualidade, previsibilidade e parcerias duradouras"
+      },
+      "excellence": {
+        "title": "Excelência",
+        "description": "Desde 2020, consolidamos nossa reputação em excelência, inovação e confiabilidade"
+      },
+      "partnership": {
+        "title": "Parceria Estratégica",
+        "description": "Somos mais do que intermediadores: atuamos como parceiros em todas as etapas"
+      }
+    },
+    "beyond": {
+      "title": "Muito além da intermediação",
+      "description1": "O agronegócio brasileiro é reconhecido mundialmente pela sua produtividade e qualidade. Mas transformar uma safra em resultados exige mais do que produzir: requer estratégia comercial, acesso aos mercados certos e domínio de processos logísticos e burocráticos.",
+      "description2": "É aqui que a AgriFerti faz a diferença. Nossa equipe atua em todas as etapas da cadeia agrícola, oferecendo:",
+      "items": {
+        "markets": {
+          "title": "Acesso a mercados globais",
+          "desc": "Conectamos sua produção aos maiores players nacionais e internacionais"
+        },
+        "negotiation": {
+          "title": "Negociação segura e transparente",
+          "desc": "Garantimos contratos claros, condições justas e alinhamento entre oferta e demanda"
+        },
+        "risk": {
+          "title": "Gestão de riscos",
+          "desc": "Atuamos com compliance, checagem de crédito e viabilidade operacional"
+        },
+        "logistics": {
+          "title": "Logística eficiente",
+          "desc": "Cuidamos de transporte, armazenagem e embarque, assegurando agilidade e confiabilidade"
+        },
+        "bureaucracy": {
+          "title": "Burocracia simplificada",
+          "desc": "Assumimos toda a documentação necessária para exportações e importações"
+        }
+      }
+    },
+    "fertilizers": {
+      "title": "Fertilizantes: a base da produção",
+      "description": "O setor de fertilizantes é estratégico para a competitividade do agronegócio brasileiro, e a AgriFerti se destaca como fornecedora confiável de insumos de alto padrão. Representamos fabricantes internacionais e oferecemos soluções como:",
+      "items": ["Ureia", "Sulfato de Amônio", "Superfosfato Simples e Triplo", "Rocha Fosfática"]
+    },
+    "commodities": {
+      "title": "Commodities em que atuamos",
+      "description": "O Brasil é um dos maiores exportadores mundiais de commodities, e a AgriFerti conecta essa produção ao mercado global. Atuamos com grãos, proteínas, insumos e subprodutos, oferecendo soluções que aumentam a competitividade e ampliam oportunidades de negócios."
+    },
+    "commitment": {
+      "title": "Nosso Compromisso",
+      "description": "Entregar qualidade, previsibilidade e parcerias duradouras, fortalecendo toda a cadeia produtiva agrícola."
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "Nossos Produtos",
+      "subtitle": "Conectamos o Brasil aos principais mercados globais com uma ampla linha de commodities agrícolas e fertilizantes"
+    },
+    "tabs": {
+      "agro": "Agronegócio",
+      "fertilizers": "Fertilizantes"
+    },
+    "markets": "Principais Mercados:",
+    "harvest": "Safra:",
+    "fertilizersSection": {
+      "title": "Fertilizantes e Minerais",
+      "subtitle": "A Base da Produção e do Desenvolvimento",
+      "intro": {
+        "title": "Fertilizantes: Impulsionando o Agronegócio",
+        "description": "O setor de fertilizantes é um dos pilares da competitividade agrícola brasileira. A AgriFerti se destaca como uma fornecedora confiável de insumos de alta performance, representando fabricantes internacionais de excelência e oferecendo soluções que potencializam a produtividade e a sustentabilidade no campo."
+      },
+      "mainTitle": "Principais Fertilizantes",
+      "minerals": {
+        "title": "Metais e Minerais: Recursos que Movem Economias",
+        "description": "Além dos fertilizantes, a AgriFerti também atua no fornecimento e exportação de metais e minerais estratégicos, contribuindo para o fortalecimento da indústria global e o comércio internacional.",
+        "mainTitle": "Principais Metais e Minerais Exportados pelo Brasil"
+      },
+      "commitment": {
+        "title": "Nosso Compromisso",
+        "description": "Entregar qualidade, previsibilidade e parcerias duradouras, fortalecendo toda a cadeia produtiva agrícola e industrial."
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Nossos Parceiros",
+      "subtitle": "Trabalhamos com líderes globais que compartilham nosso compromisso com a excelência e a inovação no agronegócio"
+    },
+    "strategic": {
+      "title": "Parcerias Estratégicas",
+      "subtitle": "Construímos relacionamentos sólidos com empresas de renome mundial para garantir as melhores soluções aos nossos clientes"
+    },
+    "trust": {
+      "title": "Confiança e Credibilidade",
+      "description": "Nossa rede de parceiros reflete nosso compromisso com a qualidade e a confiabilidade. Cada parceria é construída com base em valores compartilhados de excelência, sustentabilidade e crescimento mútuo no mercado global do agronegócio."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Fale Conosco",
+      "subtitle": "Entre em contato com nossa equipe de especialistas e descubra como podemos impulsionar seu negócio"
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "subtitle": "Estamos prontos para atender você e transformar sua produção em oportunidades globais.",
+      "phone": "Telefone",
+      "whatsapp": "WhatsApp",
+      "email": "E-mail",
+      "address": "Endereço",
+      "hours": "Horário de Atendimento",
+      "hoursValue": "Segunda a Sexta: 8h às 18h"
+    },
+    "why": {
+      "title": "Por que nos escolher?",
+      "items": [
+        "Experiência consolidada no mercado internacional",
+        "Equipe especializada e bilíngue",
+        "Rede exclusiva de compradores qualificados",
+        "Transparência total em todas as operações",
+        "Foco em resultados reais e duradouros"
+      ]
+    },
+    "form": {
+      "title": "Envie sua Mensagem",
+      "name": "Nome Completo",
+      "namePlaceholder": "Seu nome",
+      "email": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "phone": "Telefone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "company": "Empresa",
+      "companyPlaceholder": "Nome da sua empresa",
+      "message": "Mensagem",
+      "messagePlaceholder": "Como podemos ajudar você?",
+      "submit": "Enviar Mensagem",
+      "whatsappBtn": "Fale Conosco pelo WhatsApp",
+      "success": {
+        "title": "Mensagem enviada!",
+        "description": "Entraremos em contato em breve."
+      }
+    },
+    "location": {
+      "title": "Nossa Localização",
+      "fullAddress": "Endereço Completo"
+    }
+  },
   "home": {
     "hero": {
       "title": "Conectando o Agronegócio Brasileiro ao Mundo",

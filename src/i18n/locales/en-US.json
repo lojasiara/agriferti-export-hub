@@ -7,10 +7,169 @@
     "contact": "Contact",
     "contactUs": "Contact Us"
   },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Connecting Markets, Generating Results"
+    },
+    "title": "AgriFerti Brasil",
+    "intro": "AgriFerti Brasil was born with the purpose of transforming agribusiness into high-value global businesses. We are more than intermediaries: we act as strategic partners, connecting Brazilian producers, cooperatives, industries and trading companies to the main international buyers, always with security, efficiency and credibility.",
+    "values": {
+      "global": {
+        "title": "Global Presence",
+        "description": "Solid networking and international experience in Brazil's main producing regions"
+      },
+      "results": {
+        "title": "Focus on Results",
+        "description": "Total commitment to delivering quality, predictability and lasting partnerships"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Since 2020, we have consolidated our reputation for excellence, innovation and reliability"
+      },
+      "partnership": {
+        "title": "Strategic Partnership",
+        "description": "We are more than intermediaries: we act as partners at every stage"
+      }
+    },
+    "beyond": {
+      "title": "Beyond intermediation",
+      "description1": "Brazilian agribusiness is recognized worldwide for its productivity and quality. But turning a harvest into results requires more than production: it requires commercial strategy, access to the right markets and mastery of logistical and bureaucratic processes.",
+      "description2": "This is where AgriFerti makes a difference. Our team works at all stages of the agricultural chain, offering:",
+      "items": {
+        "markets": {
+          "title": "Access to global markets",
+          "desc": "We connect your production to the largest national and international players"
+        },
+        "negotiation": {
+          "title": "Safe and transparent negotiation",
+          "desc": "We guarantee clear contracts, fair conditions and alignment between supply and demand"
+        },
+        "risk": {
+          "title": "Risk management",
+          "desc": "We work with compliance, credit checking and operational feasibility"
+        },
+        "logistics": {
+          "title": "Efficient logistics",
+          "desc": "We handle transport, storage and shipping, ensuring agility and reliability"
+        },
+        "bureaucracy": {
+          "title": "Simplified bureaucracy",
+          "desc": "We assume all documentation necessary for exports and imports"
+        }
+      }
+    },
+    "fertilizers": {
+      "title": "Fertilizers: the production base",
+      "description": "The fertilizer sector is strategic for the competitiveness of Brazilian agribusiness, and AgriFerti stands out as a reliable supplier of high-standard inputs. We represent international manufacturers and offer solutions such as:",
+      "items": ["Urea", "Ammonium Sulfate", "Single and Triple Superphosphate", "Phosphate Rock"]
+    },
+    "commodities": {
+      "title": "Commodities we operate in",
+      "description": "Brazil is one of the world's largest commodity exporters, and AgriFerti connects this production to the global market. We work with grains, proteins, inputs and by-products, offering solutions that increase competitiveness and expand business opportunities."
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "description": "Deliver quality, predictability and lasting partnerships, strengthening the entire agricultural production chain."
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "Our Products",
+      "subtitle": "Connecting Brazil to the main global markets with a wide range of agricultural commodities and fertilizers"
+    },
+    "tabs": {
+      "agro": "Agribusiness",
+      "fertilizers": "Fertilizers"
+    },
+    "markets": "Main Markets:",
+    "harvest": "Harvest:",
+    "fertilizersSection": {
+      "title": "Fertilizers and Minerals",
+      "subtitle": "The Base of Production and Development",
+      "intro": {
+        "title": "Fertilizers: Boosting Agribusiness",
+        "description": "The fertilizer sector is one of the pillars of Brazilian agricultural competitiveness. AgriFerti stands out as a reliable supplier of high-performance inputs, representing international manufacturers of excellence and offering solutions that enhance productivity and sustainability in the field."
+      },
+      "mainTitle": "Main Fertilizers",
+      "minerals": {
+        "title": "Metals and Minerals: Resources that Move Economies",
+        "description": "In addition to fertilizers, AgriFerti also operates in the supply and export of strategic metals and minerals, contributing to the strengthening of the global industry and international trade.",
+        "mainTitle": "Main Metals and Minerals Exported by Brazil"
+      },
+      "commitment": {
+        "title": "Our Commitment",
+        "description": "Deliver quality, predictability and lasting partnerships, strengthening the entire agricultural and industrial production chain."
+      }
+    }
+  },
+  "partners": {
+    "hero": {
+      "title": "Our Partners",
+      "subtitle": "We work with global leaders who share our commitment to excellence and innovation in agribusiness"
+    },
+    "strategic": {
+      "title": "Strategic Partnerships",
+      "subtitle": "We build solid relationships with world-renowned companies to guarantee the best solutions to our clients"
+    },
+    "trust": {
+      "title": "Trust and Credibility",
+      "description": "Our network of partners reflects our commitment to quality and reliability. Each partnership is built on shared values of excellence, sustainability and mutual growth in the global agribusiness market."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with our team of specialists and discover how we can boost your business"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "We are ready to serve you and transform your production into global opportunities.",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Business Hours",
+      "hoursValue": "Monday to Friday: 8am to 6pm"
+    },
+    "why": {
+      "title": "Why choose us?",
+      "items": [
+        "Consolidated experience in international markets",
+        "Specialized and bilingual team",
+        "Exclusive network of qualified buyers",
+        "Total transparency in all operations",
+        "Focus on real and lasting results"
+      ]
+    },
+    "form": {
+      "title": "Send Your Message",
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "(00) 00000-0000",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "whatsappBtn": "Contact Us via WhatsApp",
+      "success": {
+        "title": "Message sent!",
+        "description": "We will contact you soon."
+      }
+    },
+    "location": {
+      "title": "Our Location",
+      "fullAddress": "Full Address"
+    }
+  },
   "home": {
     "hero": {
       "title": "Connecting Brazilian Agribusiness to the World",
-      "subtitle": "We transform commodities into high-value global businesses with security, efficiency and credibility",
+      "subtitle": "We transform agricultural products into high-value global businesses with security, efficiency and credibility",
       "productsBtn": "Our Products",
       "contactBtn": "Contact Us"
     },

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/Layout";
 import sojaImage from "@/assets/soja.jpg";
 import milhoImage from "@/assets/milho.jpg";
@@ -29,6 +30,7 @@ import ouroImage from "@/assets/mineral-ouro.jpg";
 import zincoChumboImage from "@/assets/mineral-zinco-chumbo.jpg";
 
 const Produtos = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("agro");
 
   const agroProducts = [
@@ -242,10 +244,9 @@ const Produtos = () => {
         </video>
         <div className="absolute inset-0 bg-gradient-to-br from-primary/50 via-primary/40 to-secondary/50" />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="mb-6 text-white">Nossos Produtos</h1>
+          <h1 className="mb-6 text-white">{t('products.hero.title')}</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Conectamos o Brasil aos principais mercados globais com uma ampla
-            linha de commodities agrícolas e fertilizantes
+            {t('products.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -255,8 +256,8 @@ const Produtos = () => {
         <div className="container mx-auto px-4">
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
-              <TabsTrigger value="agro">Agronegócio</TabsTrigger>
-              <TabsTrigger value="fertilizers">Fertilizantes</TabsTrigger>
+              <TabsTrigger value="agro">{t('products.tabs.agro')}</TabsTrigger>
+              <TabsTrigger value="fertilizers">{t('products.tabs.fertilizers')}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="agro" className="space-y-8">
@@ -286,7 +287,7 @@ const Produtos = () => {
                       </p>
                       <div>
                         <p className="text-sm font-semibold mb-2">
-                          Principais Mercados:
+                          {t('products.markets')}
                         </p>
                         <div className="flex flex-wrap gap-2">
                           {product.markets.map((market, idx) => (
@@ -300,7 +301,7 @@ const Produtos = () => {
                         </div>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Safra:</strong> {product.harvest}
+                        <strong>{t('products.harvest')}</strong> {product.harvest}
                       </p>
                     </CardContent>
                   </Card>
@@ -318,8 +319,8 @@ const Produtos = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
                   <div className="p-8">
-                    <h2 className="text-white mb-2">Fertilizantes e Minerais</h2>
-                    <p className="text-white/90 text-lg">A Base da Produção e do Desenvolvimento</p>
+                    <h2 className="text-white mb-2">{t('products.fertilizersSection.title')}</h2>
+                    <p className="text-white/90 text-lg">{t('products.fertilizersSection.subtitle')}</p>
                   </div>
                 </div>
               </div>
@@ -328,19 +329,16 @@ const Produtos = () => {
               <div className="container mx-auto px-4">
                 <Card className="border-none shadow-soft mb-12">
                   <CardHeader>
-                    <CardTitle className="text-2xl">Fertilizantes: Impulsionando o Agronegócio</CardTitle>
+                    <CardTitle className="text-2xl">{t('products.fertilizersSection.intro.title')}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground text-lg">
-                      O setor de fertilizantes é um dos pilares da competitividade agrícola brasileira. 
-                      A AgriFerti se destaca como uma fornecedora confiável de insumos de alta performance, 
-                      representando fabricantes internacionais de excelência e oferecendo soluções que 
-                      potencializam a produtividade e a sustentabilidade no campo.
+                      {t('products.fertilizersSection.intro.description')}
                     </p>
                   </CardContent>
                 </Card>
 
-                <h3 className="mb-8 text-center text-primary">Principais Fertilizantes</h3>
+                <h3 className="mb-8 text-center text-primary">{t('products.fertilizersSection.mainTitle')}</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                   {fertilizers.map((fertilizer, index) => (
@@ -370,14 +368,13 @@ const Produtos = () => {
 
                 {/* Minerals Section */}
                 <div className="gradient-hero p-8 rounded-2xl mb-12">
-                  <h3 className="mb-4 text-white text-center">Metais e Minerais: Recursos que Movem Economias</h3>
+                  <h3 className="mb-4 text-white text-center">{t('products.fertilizersSection.minerals.title')}</h3>
                   <p className="text-white/90 text-center max-w-3xl mx-auto">
-                    Além dos fertilizantes, a AgriFerti também atua no fornecimento e exportação de metais e 
-                    minerais estratégicos, contribuindo para o fortalecimento da indústria global e o comércio internacional.
+                    {t('products.fertilizersSection.minerals.description')}
                   </p>
                 </div>
 
-                <h3 className="mb-8 text-center text-primary">Principais Metais e Minerais Exportados pelo Brasil</h3>
+                <h3 className="mb-8 text-center text-primary">{t('products.fertilizersSection.minerals.mainTitle')}</h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                   {minerals.map((mineral, index) => (
@@ -408,9 +405,12 @@ const Produtos = () => {
                 {/* Commitment Section */}
                 <Card className="border-none shadow-soft bg-gradient-to-br from-background to-muted/30">
                   <CardContent className="p-8 text-center">
-                    <h3 className="mb-4 text-primary">Nosso Compromisso</h3>
+                    <h3 className="mb-4 text-primary">{t('products.fertilizersSection.commitment.title')}</h3>
                     <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                      Entregar qualidade, previsibilidade e parcerias duradouras, fortalecendo toda a 
+                      {t('products.fertilizersSection.commitment.description')}
+                    </p>
+                  </CardContent>
+                </Card>
                       cadeia produtiva agrícola e industrial. Conectamos produtores brasileiros aos 
                       mercados globais com expertise, segurança e credibilidade.
                     </p>

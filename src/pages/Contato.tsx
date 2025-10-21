@@ -4,49 +4,51 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 import Layout from "@/components/Layout";
 import whatsappIcon from "@/assets/whatsapp-logo-white.png";
 
 const Contato = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
+      title: t('contact.form.success.title'),
+      description: t('contact.form.success.description'),
     });
   };
 
   const contactInfo = [
     {
       icon: Phone,
-      title: "Telefone",
+      title: t('contact.info.phone'),
       content: "+55 (44) 3265-3966",
       link: "tel:+554432653966",
     },
     {
       icon: "whatsapp" as any,
-      title: "WhatsApp",
+      title: t('contact.info.whatsapp'),
       content: "+55 44 9959-9964",
       link: "https://wa.me/5544995999964",
     },
     {
       icon: Mail,
-      title: "E-mail",
+      title: t('contact.info.email'),
       content: "ceo@agriferti.com",
       link: "mailto:ceo@agriferti.com",
     },
     {
       icon: MapPin,
-      title: "Endereço",
+      title: t('contact.info.address'),
       content:
         "Av. Horácio Raccanello Filho, 6326 – Sl 01\nCentro Empresarial Torre Gêmea – Novo Centro\nCEP 87050-130 Maringá / PR",
     },
     {
       icon: Clock,
-      title: "Horário de Atendimento",
-      content: "Segunda a Sexta: 8h às 18h",
+      title: t('contact.info.hours'),
+      content: t('contact.info.hoursValue'),
     },
   ];
 
@@ -67,10 +69,9 @@ const Contato = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/40 to-secondary/50" />
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="mb-6 text-white">Fale Conosco</h1>
+          <h1 className="mb-6 text-white">{t('contact.hero.title')}</h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Entre em contato com nossa equipe de especialistas e descubra como
-            podemos impulsionar seu negócio
+            {t('contact.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -82,10 +83,9 @@ const Contato = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="mb-6">Informações de Contato</h2>
+                <h2 className="mb-6">{t('contact.info.title')}</h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Estamos prontos para atender você e transformar sua produção
-                  em oportunidades globais.
+                  {t('contact.info.subtitle')}
                 </p>
               </div>
 
@@ -127,15 +127,9 @@ const Contato = () => {
 
               <Card className="border-none gradient-hero text-white">
                 <CardContent className="p-8">
-                  <h3 className="mb-4 text-white">Por que nos escolher?</h3>
+                  <h3 className="mb-4 text-white">{t('contact.why.title')}</h3>
                   <ul className="space-y-3">
-                    {[
-                      "Experiência consolidada no mercado internacional",
-                      "Equipe especializada e bilíngue",
-                      "Rede exclusiva de compradores qualificados",
-                      "Transparência total em todas as operações",
-                      "Foco em resultados reais e duradouros",
-                    ].map((item, index) => (
+                    {t('contact.why.items', { returnObjects: true }).map((item: string, index: number) => (
                       <li key={index} className="flex items-start space-x-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-white mt-2 flex-shrink-0" />
                         <span className="opacity-90">{item}</span>
@@ -150,18 +144,18 @@ const Contato = () => {
             <div>
               <Card className="border-none shadow-medium">
                 <CardContent className="p-8">
-                  <h3 className="mb-6">Envie sua Mensagem</h3>
+                  <h3 className="mb-6">{t('contact.form.title')}</h3>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label
                         htmlFor="name"
                         className="block text-sm font-medium mb-2"
                       >
-                        Nome Completo
+                        {t('contact.form.name')}
                       </label>
                       <Input
                         id="name"
-                        placeholder="Seu nome"
+                        placeholder={t('contact.form.namePlaceholder')}
                         required
                         className="w-full"
                       />
@@ -172,12 +166,12 @@ const Contato = () => {
                         htmlFor="email"
                         className="block text-sm font-medium mb-2"
                       >
-                        E-mail
+                        {t('contact.form.email')}
                       </label>
                       <Input
                         id="email"
                         type="email"
-                        placeholder="seu@email.com"
+                        placeholder={t('contact.form.emailPlaceholder')}
                         required
                         className="w-full"
                       />
@@ -188,12 +182,12 @@ const Contato = () => {
                         htmlFor="phone"
                         className="block text-sm font-medium mb-2"
                       >
-                        Telefone
+                        {t('contact.form.phone')}
                       </label>
                       <Input
                         id="phone"
                         type="tel"
-                        placeholder="(00) 00000-0000"
+                        placeholder={t('contact.form.phonePlaceholder')}
                         required
                         className="w-full"
                       />
@@ -204,11 +198,11 @@ const Contato = () => {
                         htmlFor="company"
                         className="block text-sm font-medium mb-2"
                       >
-                        Empresa
+                        {t('contact.form.company')}
                       </label>
                       <Input
                         id="company"
-                        placeholder="Nome da sua empresa"
+                        placeholder={t('contact.form.companyPlaceholder')}
                         className="w-full"
                       />
                     </div>
@@ -218,11 +212,11 @@ const Contato = () => {
                         htmlFor="message"
                         className="block text-sm font-medium mb-2"
                       >
-                        Mensagem
+                        {t('contact.form.message')}
                       </label>
                       <Textarea
                         id="message"
-                        placeholder="Como podemos ajudar você?"
+                        placeholder={t('contact.form.messagePlaceholder')}
                         rows={5}
                         required
                         className="w-full resize-none"
@@ -234,7 +228,7 @@ const Contato = () => {
                       size="lg"
                       className="w-full gradient-primary text-white"
                     >
-                      Enviar Mensagem
+                      {t('contact.form.submit')}
                     </Button>
                     
                     <a
@@ -249,7 +243,7 @@ const Contato = () => {
                         variant="outline"
                         className="w-full"
                       >
-                        Fale Conosco pelo WhatsApp
+                        {t('contact.form.whatsappBtn')}
                       </Button>
                     </a>
                   </form>
@@ -264,7 +258,7 @@ const Contato = () => {
       <section className="py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="mb-4">Nossa Localização</h2>
+            <h2 className="mb-4">{t('contact.location.title')}</h2>
           </div>
           
           <div className="max-w-5xl mx-auto">
@@ -276,7 +270,7 @@ const Contato = () => {
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold mb-2">Endereço Completo</h3>
+                      <h3 className="font-semibold mb-2">{t('contact.location.fullAddress')}</h3>
                       <p className="text-muted-foreground">
                         Av. Horácio Raccanello Filho, 6326 – Sl 01<br />
                         Centro Empresarial Torre Gêmea – Novo Centro<br />
