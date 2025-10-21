@@ -310,11 +310,11 @@ const Produtos = () => {
 
             <TabsContent value="fertilizers" className="space-y-12">
               {/* Hero Image */}
-              <div className="relative h-96 rounded-2xl overflow-hidden shadow-medium bg-black">
+              <div className="relative rounded-2xl overflow-hidden shadow-medium">
                 <img
                   src={fertilizantesImage}
                   alt="Fertilizantes e Minerais"
-                  className="w-full h-full object-contain"
+                  className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end">
                   <div className="p-8">
