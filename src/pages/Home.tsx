@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-agro.jpg";
+import aboutPreviewImage from "@/assets/about-preview.png";
 import sojaImage from "@/assets/soja.jpg";
 import milhoImage from "@/assets/milho.jpg";
 import cafeImage from "@/assets/cafe.jpg";
@@ -233,7 +234,7 @@ const Home = () => {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-strong">
               <img
-                src={heroImage}
+                src={aboutPreviewImage}
                 alt="Agronegócio"
                 className="w-full h-full object-cover"
               />
