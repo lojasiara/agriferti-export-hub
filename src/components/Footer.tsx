@@ -73,12 +73,12 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <Phone className="w-4 h-4 mt-1 text-white flex-shrink-0" />
                 <a 
-                  href="https://wa.me/5544995999964" 
+                  href="https://wa.me/5544999599964" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-white/80 hover:text-white transition-colors"
                 >
-                  +55 (44) 9 9599-9964 ({t('footer.whatsapp')})
+                  +55 (44) 9 9959-9964 ({t('footer.whatsapp')})
                 </a>
               </li>
               <li className="flex items-start space-x-2">
