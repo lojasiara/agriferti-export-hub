@@ -1,10 +1,11 @@
-import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import Layout from "@/components/Layout";
+import whatsappIcon from "@/assets/whatsapp-icon.png";
 
 const Contato = () => {
   const { toast } = useToast();
@@ -25,7 +26,7 @@ const Contato = () => {
       link: "tel:+554432653966",
     },
     {
-      icon: MessageCircle,
+      icon: "whatsapp" as any,
       title: "WhatsApp",
       content: "+55 44 9959-9964",
       link: "https://wa.me/5544995999964",
@@ -97,7 +98,11 @@ const Contato = () => {
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
                         <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center flex-shrink-0">
-                          <info.icon className="w-6 h-6 text-white" />
+                          {info.icon === "whatsapp" ? (
+                            <img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6" />
+                          ) : (
+                            <info.icon className="w-6 h-6 text-white" />
+                          )}
                         </div>
                         <div>
                           <h3 className="font-semibold mb-1">{info.title}</h3>
