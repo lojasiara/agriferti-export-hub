@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/logo.webp";
+import logoWhite from "@/assets/logo-white.png";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="md:col-span-2">
-            <img src={logo} alt="AgriFerti Brasil" className="h-12 mb-4 brightness-0 invert" />
+            <img src={logoWhite} alt="AgriFerti Brasil" className="h-12 mb-4" />
             <p className="text-sm text-white/80 mb-4">
               Conectando o agronegócio brasileiro aos principais mercados globais
               com segurança, eficiência e credibilidade.
